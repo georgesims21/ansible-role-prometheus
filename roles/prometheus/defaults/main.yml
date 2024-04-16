@@ -10,7 +10,7 @@ prometheus_config_dir: /etc/prometheus
 prometheus_db_dir: /var/lib/prometheus
 prometheus_read_only_dirs: []
 
-prometheus_web_listen_address: "0.0.0.0:9090"
+prometheus_web_listen_address: "0.0.0.0:9091"
 prometheus_web_external_url: ''
 prometheus_metrics_path: "/{{ (prometheus_web_external_url + '/metrics') | regex_replace('^(.*://)?(.*?)/') }}"
 # See https://github.com/prometheus/exporter-toolkit/blob/master/docs/web-configuration.md
